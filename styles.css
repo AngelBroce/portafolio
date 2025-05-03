@@ -1,0 +1,149 @@
+/* Variables y colores personalizados */
+:root {
+  --purple: #8b5cf6;
+  --purple-light: #ede9fe;
+  --pink: #ec4899;
+  --pink-light: #fce7f3;
+  --teal: #14b8a6;
+  --teal-light: #ccfbf1;
+  --orange: #f97316;
+  --yellow: #eab308;
+  --red: #ef4444;
+  --blue: #3b82f6;
+  --cyan: #06b6d4;
+}
+
+/* Colores personalizados para Bootstrap */
+.text-purple { color: var(--purple) !important; }
+.text-teal { color: var(--teal) !important; }
+.bg-purple { background-color: var(--purple) !important; }
+.bg-orange { background-color: var(--orange) !important; }
+.bg-yellow { background-color: var(--yellow) !important; }
+.bg-red { background-color: var(--red) !important; }
+.bg-blue { background-color: var(--blue) !important; }
+.bg-cyan { background-color: var(--cyan) !important; }
+.bg-teal { background-color: var(--teal) !important; }
+
+.border-purple { border-color: var(--purple) !important; }
+.border-orange { border-color: var(--orange) !important; }
+.border-yellow { border-color: var(--yellow) !important; }
+.border-red { border-color: var(--red) !important; }
+.border-blue { border-color: var(--blue) !important; }
+.border-cyan { border-color: var(--cyan) !important; }
+.border-teal { border-color: var(--teal) !important; }
+
+/* Fondos con gradiente */
+.bg-gradient {
+  background: linear-gradient(to right, var(--purple-light), var(--pink-light), var(--teal-light));
+}
+
+/* Texto con gradiente */
+.gradient-text {
+  background: linear-gradient(to right, var(--purple), var(--pink), var(--teal));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Botones personalizados */
+.btn-gradient {
+  background: linear-gradient(to right, var(--purple), var(--pink));
+  color: white;
+  border: none;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #7c3aed, #db2777);
+  color: white;
+}
+
+.btn-outline-purple {
+  color: var(--purple);
+  border-color: var(--purple);
+}
+
+.btn-outline-purple:hover {
+  background-color: var(--purple-light);
+  color: var(--purple);
+}
+
+.btn-teal {
+  background: linear-gradient(to right, var(--teal), var(--cyan));
+  color: white;
+  border: none;
+}
+
+.btn-teal:hover {
+  background: linear-gradient(to right, #0d9488, #0891b2);
+  color: white;
+}
+
+/* Personalización de las pestañas */
+.nav-pills .nav-link.active[aria-controls="proyectos"] {
+  background-color: var(--purple);
+}
+
+.nav-pills .nav-link.active[aria-controls="habilidades"] {
+  background-color: var(--pink);
+}
+
+.nav-pills .nav-link.active[aria-controls="sobre-mi"] {
+  background-color: var(--teal);
+}
+
+.nav-pills .nav-link {
+  color: #6c757d;
+}
+
+/* Borde con gradiente para la imagen de perfil */
+.gradient-border {
+  padding: 3px;
+  background: linear-gradient(to right, var(--purple), var(--pink), var(--teal));
+}
+
+/* Timeline para la experiencia */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  border-left: 2px solid var(--teal-light);
+  padding-left: 1.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--teal);
+  border-radius: 50%;
+  left: -7px;
+  top: 6px;
+}
+
+/* Estilos para las tarjetas de proyectos */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-language {
+  font-size: 0.75rem;
+}
+
+.project-topic {
+  font-size: 0.75rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gradient-text {
+    font-size: 2rem;
+  }
+}
