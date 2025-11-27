@@ -1,16 +1,76 @@
 /* Variables y colores personalizados */
 :root {
-  --purple: #8b5cf6;
-  --purple-light: #ede9fe;
-  --pink: #ec4899;
-  --pink-light: #fce7f3;
-  --teal: #14b8a6;
-  --teal-light: #ccfbf1;
-  --orange: #f97316;
-  --yellow: #eab308;
-  --red: #ef4444;
-  --blue: #3b82f6;
-  --cyan: #06b6d4;
+  --bg-dark: #050505;
+  --bg-panel: #111111;
+  --bg-soft: #1b1b1f;
+  --border-dark: #24242a;
+  --text-body: #f5f5f5;
+  --text-muted: #b0b0c0;
+  --purple: #c084fc;
+  --purple-light: rgba(192, 132, 252, 0.18);
+  --pink: #fb7185;
+  --pink-light: rgba(251, 113, 133, 0.18);
+  --teal: #2dd4bf;
+  --teal-light: rgba(45, 212, 191, 0.18);
+  --orange: #fb923c;
+  --yellow: #facc15;
+  --red: #f87171;
+  --blue: #60a5fa;
+  --cyan: #22d3ee;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-body);
+}
+
+body, .text-dark {
+  color: var(--text-body) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.bg-white,
+.bg-light,
+.card,
+.navbar,
+.tab-content,
+footer,
+.nav-pills .nav-link,
+.progress,
+.timeline-item,
+.nav-pills,
+.btn-outline-purple {
+  background-color: var(--bg-panel) !important;
+  color: var(--text-body) !important;
+}
+footer {
+  border-top: 1px solid var(--border-dark);
+  background-color: var(--bg-panel);
+  color: var(--text-muted);
+}
+
+.navbar,
+footer,
+.card,
+.nav-pills,
+.nav-pills .nav-link,
+.timeline-item,
+.btn-outline-purple,
+.progress {
+  border-color: var(--border-dark) !important;
+}
+
+.bg-soft {
+  background-color: var(--bg-soft);
+}
+
+.badge.bg-light {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: var(--text-body) !important;
+  border-color: var(--border-dark) !important;
 }
 
 /* Colores personalizados para Bootstrap */
@@ -34,7 +94,7 @@
 
 /* Fondos con gradiente */
 .bg-gradient {
-  background: linear-gradient(to right, var(--purple-light), var(--pink-light), var(--teal-light));
+  background: linear-gradient(120deg, #09090b, #131320, #0b2a36);
 }
 
 /* Texto con gradiente */
@@ -57,6 +117,7 @@
   color: white;
 }
 
+
 .btn-outline-purple {
   color: var(--purple);
   border-color: var(--purple);
@@ -64,7 +125,7 @@
 
 .btn-outline-purple:hover {
   background-color: var(--purple-light);
-  color: var(--purple);
+  color: #fff;
 }
 
 .btn-teal {
@@ -76,6 +137,17 @@
 .btn-teal:hover {
   background: linear-gradient(to right, #0d9488, #0891b2);
   color: white;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .btn-link {
+  color: var(--text-body) !important;
+}
+
+.navbar .btn-link:hover,
+.navbar .nav-link:hover {
+  color: var(--pink) !important;
 }
 
 /* Personalización de las pestañas */
@@ -92,13 +164,18 @@
 }
 
 .nav-pills .nav-link {
-  color: #6c757d;
+  color: var(--text-muted);
+}
+
+.nav-pills .nav-link.active {
+  color: #fff !important;
 }
 
 /* Borde con gradiente para la imagen de perfil */
 .gradient-border {
   padding: 3px;
   background: linear-gradient(to right, var(--purple), var(--pink), var(--teal));
+  border-radius: 999px;
 }
 
 /* Timeline para la experiencia */
@@ -127,6 +204,7 @@
 /* Estilos para las tarjetas de proyectos */
 .project-card {
   transition: all 0.3s ease;
+  background-color: var(--bg-panel);
 }
 
 .project-card:hover {
@@ -139,6 +217,14 @@
 
 .project-topic {
   font-size: 0.75rem;
+}
+
+.progress {
+  background-color: #1f1f27 !important;
+}
+
+.progress-bar {
+  border-radius: 999px;
 }
 
 /* Responsive */
