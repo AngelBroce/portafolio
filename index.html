@@ -224,206 +224,400 @@
     <div class="container">
       <div class="mb-5 text-center text-md-start">
         <span class="project-category-tag">Capacidades & Stack</span>
-        <h2 class="h2 font-display text-white mt-1 mb-2">Habilidades Técnicas</h2>
-        <p class="text-secondary" style="max-width: 600px;">Dominio de lenguajes, frameworks y metodologías para el ciclo completo de desarrollo de software.</p>
+        <h2 class="h2 font-display text-white mt-1 mb-2">Habilidades Técnicas & Frameworks</h2>
+        <p class="text-secondary" style="max-width: 680px;">
+          Dominio de lenguajes, frameworks aplicados y casos de uso prácticos desarrollados en cada proyecto.
+          <span class="text-white">Haz clic en cualquier proyecto para ver su especificación técnica completa.</span>
+        </p>
       </div>
 
       <div class="row g-4">
-        <!-- Backend & Bases de Datos -->
-        <div class="col-md-6 col-lg-3 d-flex">
+        
+        <!-- 1. Backend & Arquitectura de Software -->
+        <div class="col-lg-6 d-flex">
           <div class="bento-card w-100">
-            <div class="d-flex align-items-center gap-2 mb-3">
-              <i class="fas fa-server text-white fs-5"></i>
-              <h3 class="h5 mb-0 text-white font-display">Backend & Datos</h3>
+            <div class="d-flex align-items-center gap-2 mb-4 pb-2 border-bottom" style="border-color: var(--border-subtle) !important;">
+              <i class="fas fa-server text-white fs-4"></i>
+              <div>
+                <h3 class="h5 mb-0 text-white font-display">Backend & Arquitectura de Software</h3>
+                <span class="text-muted small">Lógica de negocio, APIs y persistencia de datos</span>
+              </div>
             </div>
-            
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">PHP</span>
-                <span class="text-secondary">90%</span>
+
+            <!-- PHP -->
+            <div class="skill-block">
+              <div class="skill-header">
+                <span class="text-white fw-bold">PHP</span>
+                <span class="text-secondary small fw-semibold">90%</span>
               </div>
               <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">Frameworks & Librerías:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">Laravel</span>
+                  <span class="framework-badge">Arquitectura MVC</span>
+                  <span class="framework-badge">PDO (Prepared Statements)</span>
+                  <span class="framework-badge">Composer</span>
+                </div>
+              </div>
+
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('sistema-citas-clinicas')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> Sistema de Citas Clínicas
+                </a>
+                <p class="skill-project-desc">Desarrollo del backend MVC, gestión de agendas médicas concurrentes y validación de reservas sin colisiones de horarios.</p>
+              </div>
+
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('proyecto-soft-iv')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> Chequera Virtual (Proyecto Soft IV)
+                </a>
+                <p class="skill-project-desc">Implementación del flujo transaccional bancario con consistencia ACID para emisión y conciliación de cheques virtuales.</p>
+              </div>
             </div>
 
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">Python</span>
-                <span class="text-secondary">85%</span>
+            <!-- Python -->
+            <div class="skill-block">
+              <div class="skill-header">
+                <span class="text-white fw-bold">Python</span>
+                <span class="text-secondary small fw-semibold">85%</span>
               </div>
               <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
-            </div>
-
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">MySQL / SQL</span>
-                <span class="text-secondary">85%</span>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">Frameworks & Librerías:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">Pandas</span>
+                  <span class="framework-badge">ReportLab (PDF Engine)</span>
+                  <span class="framework-badge">PyTest</span>
+                  <span class="framework-badge">Selenium WebDriver</span>
+                </div>
               </div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('generador-de-informes-cait')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> Generador de Informes CAIT
+                </a>
+                <p class="skill-project-desc">Procesamiento algorítmico de matrices técnicas con Pandas y compilación automática de reportes formales PDF reduciendo tiempos en 80%.</p>
+              </div>
             </div>
 
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">Java</span>
-                <span class="text-secondary">80%</span>
+            <!-- Java & .NET -->
+            <div class="skill-block mb-0">
+              <div class="skill-header">
+                <span class="text-white fw-bold">Java & Visual Basic .NET</span>
+                <span class="text-secondary small fw-semibold">80%</span>
               </div>
               <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">Frameworks & Herramientas:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">Java SE</span>
+                  <span class="framework-badge">Visual Basic .NET</span>
+                  <span class="framework-badge">ADO.NET</span>
+                  <span class="framework-badge">WinForms</span>
+                </div>
+              </div>
+
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('ds8-proyecto2')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> DS8-PROYECTO2 (Gestión & Backup)
+                </a>
+                <p class="skill-project-desc">Software de escritorio para automatización de respaldos de bases de datos y control de accesos por roles administrativos.</p>
+              </div>
             </div>
-            
-            <div class="d-flex flex-wrap gap-1 mt-3 pt-3 border-top" style="border-color: var(--border-subtle) !important;">
-              <span class="badge-tech">RESTful APIs</span>
-              <span class="badge-tech">Laravel</span>
-              <span class="badge-tech">MVC</span>
-            </div>
+
           </div>
         </div>
 
-        <!-- Frontend & Web Moderno -->
-        <div class="col-md-6 col-lg-3 d-flex">
+        <!-- 2. Frontend Moderno & Interfaces Web -->
+        <div class="col-lg-6 d-flex">
           <div class="bento-card w-100">
-            <div class="d-flex align-items-center gap-2 mb-3">
-              <i class="fas fa-code text-white fs-5"></i>
-              <h3 class="h5 mb-0 text-white font-display">Frontend Web</h3>
+            <div class="d-flex align-items-center gap-2 mb-4 pb-2 border-bottom" style="border-color: var(--border-subtle) !important;">
+              <i class="fas fa-code text-white fs-4"></i>
+              <div>
+                <h3 class="h5 mb-0 text-white font-display">Frontend & Modern Web</h3>
+                <span class="text-muted small">Experiencia de usuario, interactividad y maquetación</span>
+              </div>
             </div>
 
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">HTML5 Semántico</span>
-                <span class="text-secondary">95%</span>
+            <!-- JavaScript -->
+            <div class="skill-block">
+              <div class="skill-header">
+                <span class="text-white fw-bold">JavaScript (ES6+)</span>
+                <span class="text-secondary small fw-semibold">85%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">Frameworks & Tecnologías:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">Vanilla ES6+</span>
+                  <span class="framework-badge">Fetch REST API</span>
+                  <span class="framework-badge">DOM Reactivo</span>
+                  <span class="framework-badge">Node.js Basics</span>
+                </div>
+              </div>
+
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('arbol-de-fallos-fiabilidad')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> Analizador de Árbol de Fallos (FTA)
+                </a>
+                <p class="skill-project-desc">Motor algorítmico en JavaScript para cálculo en tiempo real de probabilidades de fallas y renderizado jerárquico de nodos lógicos.</p>
+              </div>
+
+              <div class="skill-project-item">
+                <a href="#proyectos" class="skill-project-link">
+                  <i class="fas fa-laptop-code text-white me-1"></i> Portafolio Interactivo (Este sitio)
+                </a>
+                <p class="skill-project-desc">Consumo asíncrono de GitHub API, filtrado instantáneo por categorías/búsqueda y drawer modal reactivo con físicas de Emil Kowalski.</p>
+              </div>
+            </div>
+
+            <!-- Astro -->
+            <div class="skill-block">
+              <div class="skill-header">
+                <span class="text-white fw-bold">Astro</span>
+                <span class="text-secondary small fw-semibold">85%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">Frameworks & Arquitectura:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">Astro Framework</span>
+                  <span class="framework-badge">Arquitectura de Islas</span>
+                  <span class="framework-badge">Tailwind CSS / SCSS</span>
+                  <span class="framework-badge">Static Site Generation (SSG)</span>
+                </div>
+              </div>
+
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('proyectods5')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> ProyectoDS5 (E-Commerce Semestral)
+                </a>
+                <p class="skill-project-desc">Tienda virtual de alto rendimiento con catálogo filtrable e islas reactivas para carrito de compras con persistencia en LocalStorage.</p>
+              </div>
+            </div>
+
+            <!-- HTML5 & CSS3 -->
+            <div class="skill-block mb-0">
+              <div class="skill-header">
+                <span class="text-white fw-bold">HTML5 Semántico & CSS3 Avanzado</span>
+                <span class="text-secondary small fw-semibold">95%</span>
               </div>
               <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 95%;"></div></div>
-            </div>
-
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">CSS3 / SCSS</span>
-                <span class="text-secondary">90%</span>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">Diseño & Estándares:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">Bootstrap 5</span>
+                  <span class="framework-badge">Glassmorphism</span>
+                  <span class="framework-badge">Bento Grid Layout</span>
+                  <span class="framework-badge">Responsive Design</span>
+                  <span class="framework-badge">Accesibilidad WCAG</span>
+                </div>
               </div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-            </div>
 
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">JavaScript ES6+</span>
-                <span class="text-secondary">85%</span>
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('landingpage')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> Landing Page Corporativa
+                </a>
+                <p class="skill-project-desc">Diseño web de alta fidelidad, microinteracciones en botones y adaptación completa para teléfonos móviles y pantallas grandes.</p>
               </div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
             </div>
 
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">Astro</span>
-                <span class="text-secondary">85%</span>
-              </div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
-            </div>
-
-            <div class="d-flex flex-wrap gap-1 mt-3 pt-3 border-top" style="border-color: var(--border-subtle) !important;">
-              <span class="badge-tech">Bootstrap 5</span>
-              <span class="badge-tech">Responsive</span>
-              <span class="badge-tech">Glassmorphism</span>
-            </div>
           </div>
         </div>
 
-        <!-- QA, Testing & Fiabilidad -->
-        <div class="col-md-6 col-lg-3 d-flex">
+        <!-- 3. Testing, QA & Fiabilidad -->
+        <div class="col-lg-6 d-flex">
           <div class="bento-card w-100">
-            <div class="d-flex align-items-center gap-2 mb-3">
-              <i class="fas fa-vial text-white fs-5"></i>
-              <h3 class="h5 mb-0 text-white font-display">Testing & QA</h3>
+            <div class="d-flex align-items-center gap-2 mb-4 pb-2 border-bottom" style="border-color: var(--border-subtle) !important;">
+              <i class="fas fa-vial text-white fs-4"></i>
+              <div>
+                <h3 class="h5 mb-0 text-white font-display">Testing, QA & Fiabilidad</h3>
+                <span class="text-muted small">Automatización, rendimiento y calidad de software</span>
+              </div>
             </div>
 
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">Selenium WebDriver</span>
-                <span class="text-secondary">85%</span>
+            <!-- Selenium -->
+            <div class="skill-block">
+              <div class="skill-header">
+                <span class="text-white fw-bold">Selenium WebDriver</span>
+                <span class="text-secondary small fw-semibold">85%</span>
               </div>
               <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">Frameworks & Patrones:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">Selenium (Python)</span>
+                  <span class="framework-badge">Page Object Model (POM)</span>
+                  <span class="framework-badge">Pruebas E2E</span>
+                  <span class="framework-badge">PyTest Runner</span>
+                </div>
+              </div>
+
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('selenium-python')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> Suite selenium-python
+                </a>
+                <p class="skill-project-desc">Automatización de flujos de usuario (autenticación, validación de formularios y pagos) con capturas de pantalla automáticas ante fallos.</p>
+              </div>
             </div>
 
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">Apache JMeter</span>
-                <span class="text-secondary">80%</span>
+            <!-- JMeter -->
+            <div class="skill-block">
+              <div class="skill-header">
+                <span class="text-white fw-bold">Apache JMeter</span>
+                <span class="text-secondary small fw-semibold">80%</span>
               </div>
               <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 80%;"></div></div>
-            </div>
-
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">Pruebas E2E</span>
-                <span class="text-secondary">85%</span>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">Metodología de Pruebas:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">Stress Testing</span>
+                  <span class="framework-badge">Load Testing</span>
+                  <span class="framework-badge">HTTP Samplers</span>
+                  <span class="framework-badge">Análisis Percentiles 90/95/99</span>
+                </div>
               </div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('entorno-jmeter')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> Entorno de Pruebas JMeter
+                </a>
+                <p class="skill-project-desc">Diseño de planes de carga con múltiples hilos concurrentes para identificar cuellos de botella en servidores y pools de bases de datos.</p>
+              </div>
             </div>
 
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">Fiabilidad / FTA</span>
-                <span class="text-secondary">80%</span>
+            <!-- Fiabilidad FTA -->
+            <div class="skill-block mb-0">
+              <div class="skill-header">
+                <span class="text-white fw-bold">Ingeniería de Fiabilidad & Pruebas Unitarias</span>
+                <span class="text-secondary small fw-semibold">80%</span>
               </div>
               <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">Estándares & Métricas:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">Árbol de Fallos (FTA)</span>
+                  <span class="framework-badge">Cortes Mínimos (Cut Sets)</span>
+                  <span class="framework-badge">Pruebas Funcionales</span>
+                  <span class="framework-badge">Caja Negra / Blanca</span>
+                </div>
+              </div>
+
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('arbol-de-fallos-fiabilidad')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> Fiabilidad de Sistemas Críticos
+                </a>
+                <p class="skill-project-desc">Modelado de confiabilidad de sistemas complejos para evaluar puntos únicos de falla y mitigar riesgos en despliegue.</p>
+              </div>
             </div>
 
-            <div class="d-flex flex-wrap gap-1 mt-3 pt-3 border-top" style="border-color: var(--border-subtle) !important;">
-              <span class="badge-tech">Page Object Model</span>
-              <span class="badge-tech">Stress Tests</span>
-              <span class="badge-tech">QA</span>
-            </div>
           </div>
         </div>
 
-        <!-- Móvil & Herramientas -->
-        <div class="col-md-6 col-lg-3 d-flex">
+        <!-- 4. Bases de Datos, Móvil & Herramientas -->
+        <div class="col-lg-6 d-flex">
           <div class="bento-card w-100">
-            <div class="d-flex align-items-center gap-2 mb-3">
-              <i class="fas fa-tools text-white fs-5"></i>
-              <h3 class="h5 mb-0 text-white font-display">Móvil & Herramientas</h3>
+            <div class="d-flex align-items-center gap-2 mb-4 pb-2 border-bottom" style="border-color: var(--border-subtle) !important;">
+              <i class="fas fa-database text-white fs-4"></i>
+              <div>
+                <h3 class="h5 mb-0 text-white font-display">Bases de Datos, Móvil & Gestión</h3>
+                <span class="text-muted small">Persistencia, apps nativas y flujo colaborativo</span>
+              </div>
             </div>
 
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">Android / Kotlin</span>
-                <span class="text-secondary">75%</span>
+            <!-- MySQL -->
+            <div class="skill-block">
+              <div class="skill-header">
+                <span class="text-white fw-bold">MySQL & Bases de Datos Relacionales</span>
+                <span class="text-secondary small fw-semibold">85%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">Conceptos & Motores:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">MySQL</span>
+                  <span class="framework-badge">SQL Server</span>
+                  <span class="framework-badge">Normalización 3NF</span>
+                  <span class="framework-badge">Procedimientos Almacenados</span>
+                </div>
+              </div>
+
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('sistema-citas-clinicas')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> Sistema de Citas & Chequera
+                </a>
+                <p class="skill-project-desc">Diseño de diagramas E/R, modelado de llaves foráneas y protección de datos mediante consultas preparadas.</p>
+              </div>
+            </div>
+
+            <!-- Android -->
+            <div class="skill-block">
+              <div class="skill-header">
+                <span class="text-white fw-bold">Desarrollo Móvil Android (Kotlin)</span>
+                <span class="text-secondary small fw-semibold">75%</span>
               </div>
               <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 75%;"></div></div>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">SDK & Arquitectura:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">Kotlin</span>
+                  <span class="framework-badge">Android SDK</span>
+                  <span class="framework-badge">Material Design 3</span>
+                  <span class="framework-badge">Kotlin Coroutines</span>
+                </div>
+              </div>
+
+              <div class="skill-project-item">
+                <a href="javascript:void(0)" onclick="openProjectSpecModal('android-py2')" class="skill-project-link">
+                  <i class="fas fa-layer-group text-white me-1"></i> android-py2 / android
+                </a>
+                <p class="skill-project-desc">Creación de apps Android nativas con arquitectura moderna, consumo de APIs y manejo de ciclo de vida de actividades.</p>
+              </div>
             </div>
 
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">Git & GitHub</span>
-                <span class="text-secondary">90%</span>
+            <!-- Herramientas & Ágiles -->
+            <div class="skill-block mb-0">
+              <div class="skill-header">
+                <span class="text-white fw-bold">Git, GitHub & Metodologías Ágiles</span>
+                <span class="text-secondary small fw-semibold">90%</span>
               </div>
               <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-            </div>
-
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">Figma & UI Design</span>
-                <span class="text-secondary">80%</span>
+              
+              <div class="mb-2">
+                <div class="skill-meta-label">Herramientas & Procesos:</div>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="framework-badge">Git & GitHub</span>
+                  <span class="framework-badge">Metodología Scrum</span>
+                  <span class="framework-badge">Figma UI/UX</span>
+                  <span class="framework-badge">Linux</span>
+                </div>
               </div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 80%;"></div></div>
-            </div>
 
-            <div class="skill-bar-wrapper">
-              <div class="d-flex justify-content-between small">
-                <span class="text-white">Scrum / Ágiles</span>
-                <span class="text-secondary">85%</span>
+              <div class="skill-project-item">
+                <span class="text-white fw-bold"><i class="fas fa-users-cog me-1"></i> Proyectos de Software IV, V & VI (UTP)</span>
+                <p class="skill-project-desc">Gestión de proyectos en equipo con control de ramas (Git Flow), pull requests, sprints de desarrollo y prototipado en Figma.</p>
               </div>
-              <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
             </div>
 
-            <div class="d-flex flex-wrap gap-1 mt-3 pt-3 border-top" style="border-color: var(--border-subtle) !important;">
-              <span class="badge-tech">VB.NET</span>
-              <span class="badge-tech">CI/CD</span>
-              <span class="badge-tech">Linux</span>
-            </div>
           </div>
         </div>
 
       </div>
     </div>
   </section>
+
 
   <!-- ================= EXPERIENCIA Y FORMACIÓN ================= -->
   <section class="py-5" id="experiencia">

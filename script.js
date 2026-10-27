@@ -409,7 +409,25 @@ window.resetFilters = function() {
  * Abre el modal con las especificaciones técnicas completas de un proyecto
  */
 window.openProjectSpecModal = function(projectName) {
-  const project = allProjects.find(p => p.name.toLowerCase() === projectName.toLowerCase());
+  const normKey = (projectName || '').toLowerCase().trim();
+  let project = allProjects.find(p => p.name.toLowerCase() === normKey);
+
+  if (!project && PROJECT_SPECS_DATABASE[normKey]) {
+    const customSpec = PROJECT_SPECS_DATABASE[normKey];
+    project = {
+      name: normKey,
+      title: customSpec.title || formatProjectTitle(normKey),
+      categoryLabel: customSpec.categoryLabel || 'Desarrollo de Software',
+      description: customSpec.shortDesc || 'Proyecto desarrollado con buenas prácticas de software.',
+      stack: customSpec.stack || [],
+      highlights: customSpec.highlights || [],
+      architecture: customSpec.architecture || 'Diseño de software modular.',
+      challenges: customSpec.challenges || 'Optimización y robustez técnica.',
+      html_url: `https://github.com/AngelBroce/${projectName}`,
+      homepage: customSpec.demoUrl || null
+    };
+  }
+
   if (!project) return;
 
   const modalBackdrop = document.getElementById('spec-modal');
